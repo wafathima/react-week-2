@@ -1,35 +1,35 @@
 
-import {useState} from "react";
+// import {useState} from "react";
 
-function App(){
-    const [task,setTask]=useState("")
-    const [tasks, setTasks]=useState([])
+// function App(){
+//     const [task,setTask]=useState("")
+//     const [tasks, setTasks]=useState([])
     
-    function addTask(){
-        if(task.trim()!==""){
-            setTasks([...tasks,task]);
-            setTask("");
-        }
-    }
-    return(
-        <div>
-            <h1>TO DO LIST</h1>
-            <p>Just Do it.</p>
-            <input 
-            value={task}
-            onChange={(e)=> setTask(e.target.value)}
-            placeholder="enter here.."
-            />
-            <button onClick={addTask}>add new</button>
-            <ul>
-                {tasks.map((t,index)=>(
-                <li key={index}>{t}</li>
-    ))}
-            </ul>
-        </div>
-    )
-}
-export default App;
+//     function addTask(){
+//         if(task.trim()!==""){
+//             setTasks([...tasks,task]);
+//             setTask("");
+//         }
+//     }
+//     return(
+//         <div>
+//             <h1>TO DO LIST</h1>
+//             <p>Just Do it.</p>
+//             <input 
+//             value={task}
+//             onChange={(e)=> setTask(e.target.value)}
+//             placeholder="enter here.."
+//             />
+//             <button onClick={addTask}>add new</button>
+//             <ul>
+//                 {tasks.map((t,index)=>(
+//                 <li key={index}>{t}</li>
+//     ))}
+//             </ul>
+//         </div>
+//     )
+// }
+// export default App;
 
 
 // // import React from "react";
