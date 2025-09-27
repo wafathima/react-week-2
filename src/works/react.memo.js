@@ -10,6 +10,7 @@
 //      return(
 //         <div>
 //             <Child count={count}/>
+//                <Child count={count}/>
 //             <button onClick={()=>setCount(count+1)}>click</button>
 //             <input value={text} onChange={(e)=>setText(e.target.value)}/>
 //         </div>

@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useReducer, useState } from 'react';
 import React from 'react';
+import {useEffect} from 'react';
 
 // --------------⛔---------
 // import AppContext from './components/AppContext';
@@ -19,6 +20,7 @@ import React from 'react';
 //     )
 // }
 // export default App;
+
 
 
 // -----------⛔-----------
@@ -61,14 +63,36 @@ import React from 'react';
 // ----------⛔---------
 
 
-import Users from "./pages/Users";
+// import Users from "./pages/Users";
+// function App(){
+//     return (
+//         <div>
+//             <h1> CRUD Example</h1>
+//             <Users/>
+//         </div>
+//     )
+// }
+// export default App;
+
+import { BrowserRouter,Routes,Route,Link, Navigate } from 'react-router-dom';
+import About from "./components/About"
+import Home from "./components/Home"
 function App(){
     return (
+        <BrowserRouter>
         <div>
-            <h1> CRUD Example</h1>
-            <Users/>
+            <nav>
+                <Link to="/">About</Link>{""}|
+                <Link to="/Home">Home</Link>
+            </nav>
+
+            <Routes>
+                <Route path='/' element={<About/>}/>
+                <Route path='Home' element={<Home/>}/>
+            </Routes>
         </div>
+        </BrowserRouter>
     )
 }
 export default App;
-
+   
