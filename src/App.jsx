@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import { useReducer, useState } from 'react';
 import React from 'react';
-import {useEffect} from 'react';
+// import {useEffect} from 'react';
 
 // --------------⛔---------
 // import AppContext from './components/AppContext';
@@ -36,8 +36,8 @@ import {useEffect} from 'react';
 //   return (
 //     <ul>
 //       {data.map((user)=>(
-//         <li key={user.id}>{user.title}</li>
-//       ))}
+//         <li key={user.id}>{user.title}</li>  
+//       ))} 
 //     </ul>
 //   )
 // }
@@ -63,36 +63,35 @@ import {useEffect} from 'react';
 // ----------⛔---------
 
 
-// import Users from "./pages/Users";
-// function App(){
-//     return (
-//         <div>
-//             <h1> CRUD Example</h1>
-//             <Users/>
-//         </div>
-//     )
-// }
-// export default App;
-
-import { BrowserRouter,Routes,Route,Link, Navigate } from 'react-router-dom';
-import About from "./components/About"
-import Home from "./components/Home"
+import Users from "./pages/Users";
 function App(){
     return (
-        <BrowserRouter>
         <div>
-            <nav>
-                <Link to="/">About</Link>{""}|
-                <Link to="/Home">Home</Link>
-            </nav>
-
-            <Routes>
-                <Route path='/' element={<About/>}/>
-                <Route path='Home' element={<Home/>}/>
-            </Routes>
+            <h1> CRUD Example</h1>
+            <Users/>
         </div>
-        </BrowserRouter>
     )
 }
 export default App;
-   
+
+// function App(){
+//     const [count,setCount]=useState(1)
+//     const increase=(()=>{
+//     setCount(count+1)
+//     })
+//     const decrease=(()=>{
+    
+//     if(count>0){
+//         setCount(count-1)
+//     }
+//     })
+//     return(
+//         <div>
+//             <h1>count : {count}</h1>
+//             <button onClick={increase}>increase</button>
+//             <button onClick={decrease}>decrease</button>
+
+//         </div>  
+//     )
+// }
+// export default App;
