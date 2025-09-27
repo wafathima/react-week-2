@@ -1,0 +1,8 @@
+{
+    "user":[
+        {"id":1,"name":"aliya","email":"aliya@exmpl.com"},
+        {"id":2,"name":"ziya","email":"ziay@exmpl.com"},
+        {"id":3,"name":"liya","email":"liya@exmpl.com"},
+        {"id":4,"name":"riya","email":"riya@exmpl.com"}
+    ]
+}
